@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
                 print("ok")
             })
             let actions = [okButton]
-            presentAlertControllerWithTitle("Hey there!", message: "Thanks for purchasing WatchLight! To ensure that your WatchLight does not turn off, move the Digital Crown around while using WatchLight. Use Force Touch to get more information about how to enhance your WatchLight experience.", preferredStyle: WKAlertControllerStyle.Alert, actions: actions)
+            presentAlertControllerWithTitle("Hey there!", message: "Thanks for downloading WatchLight! To ensure that your WatchLight does not turn off, move the Digital Crown around while using WatchLight. Use Force Touch to get more information about how to enhance your WatchLight experience.", preferredStyle: WKAlertControllerStyle.Alert, actions: actions)
             
             
         }
