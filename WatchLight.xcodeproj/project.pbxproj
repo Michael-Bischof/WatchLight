@@ -7,14 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6603111BC2DA4E002FFE44 /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6603101BC2DA4E002FFE44 /* BrightnessController.swift */; };
+		6F6603131BC2F569002FFE44 /* KeepOnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6603121BC2F569002FFE44 /* KeepOnController.swift */; };
+		6F6D95B41BC4F576009BAA00 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6D95B31BC4F576009BAA00 /* ModalViewController.swift */; };
 		6FD5A62A1BC072C30067FC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5A6291BC072C30067FC71 /* AppDelegate.swift */; };
 		6FD5A62C1BC072C30067FC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5A62B1BC072C30067FC71 /* ViewController.swift */; };
 		6FD5A62F1BC072C30067FC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A62D1BC072C30067FC71 /* Main.storyboard */; };
 		6FD5A6311BC072C30067FC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A6301BC072C30067FC71 /* Assets.xcassets */; };
 		6FD5A6341BC072C30067FC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A6321BC072C30067FC71 /* LaunchScreen.storyboard */; };
+		6FD5A6411BC072EA0067FC71 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A63F1BC072EA0067FC71 /* Interface.storyboard */; };
+		6FD5A6431BC072EA0067FC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A6421BC072EA0067FC71 /* Assets.xcassets */; };
+		6FD5A64A1BC072EB0067FC71 /* WatchLightApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6FD5A6491BC072EB0067FC71 /* WatchLightApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6FD5A64F1BC072EB0067FC71 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5A64E1BC072EB0067FC71 /* InterfaceController.swift */; };
+		6FD5A6511BC072EB0067FC71 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5A6501BC072EB0067FC71 /* ExtensionDelegate.swift */; };
+		6FD5A6531BC072EB0067FC71 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5A6521BC072EB0067FC71 /* GlanceController.swift */; };
+		6FD5A6551BC072EB0067FC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD5A6541BC072EB0067FC71 /* Assets.xcassets */; };
+		6FD5A6591BC072EB0067FC71 /* WatchLightApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6FD5A63D1BC072EA0067FC71 /* WatchLightApp.app */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6FD5A64B1BC072EB0067FC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FD5A61E1BC072C30067FC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD5A6481BC072EB0067FC71;
+			remoteInfo = "WatchLightApp Extension";
+		};
+		6FD5A6571BC072EB0067FC71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FD5A61E1BC072C30067FC71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FD5A63C1BC072EA0067FC71;
+			remoteInfo = WatchLightApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FD5A65D1BC072EB0067FC71 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6FD5A64A1BC072EB0067FC71 /* WatchLightApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD5A6611BC072EB0067FC71 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6FD5A6591BC072EB0067FC71 /* WatchLightApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6F6603101BC2DA4E002FFE44 /* BrightnessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
+		6F6603121BC2F569002FFE44 /* KeepOnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepOnController.swift; sourceTree = "<group>"; };
+		6F6D95B31BC4F576009BAA00 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		6FD5A6261BC072C30067FC71 /* WatchLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD5A6291BC072C30067FC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FD5A62B1BC072C30067FC71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,10 +78,27 @@
 		6FD5A6301BC072C30067FC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD5A6331BC072C30067FC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FD5A6351BC072C30067FC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD5A63D1BC072EA0067FC71 /* WatchLightApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchLightApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD5A6401BC072EA0067FC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6FD5A6421BC072EA0067FC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FD5A6441BC072EB0067FC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FD5A6491BC072EB0067FC71 /* WatchLightApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchLightApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FD5A64E1BC072EB0067FC71 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6FD5A6501BC072EB0067FC71 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6FD5A6521BC072EB0067FC71 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		6FD5A6541BC072EB0067FC71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FD5A6561BC072EB0067FC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6FD5A6231BC072C30067FC71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD5A6461BC072EB0067FC71 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				6FD5A6281BC072C30067FC71 /* WatchLight */,
+				6FD5A63E1BC072EA0067FC71 /* WatchLightApp */,
+				6FD5A64D1BC072EB0067FC71 /* WatchLightApp Extension */,
 				6FD5A6271BC072C30067FC71 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				6FD5A6261BC072C30067FC71 /* WatchLight.app */,
+				6FD5A63D1BC072EA0067FC71 /* WatchLightApp.app */,
+				6FD5A6491BC072EB0067FC71 /* WatchLightApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +137,33 @@
 				6FD5A6301BC072C30067FC71 /* Assets.xcassets */,
 				6FD5A6321BC072C30067FC71 /* LaunchScreen.storyboard */,
 				6FD5A6351BC072C30067FC71 /* Info.plist */,
+				6F6D95B31BC4F576009BAA00 /* ModalViewController.swift */,
 			);
 			path = WatchLight;
+			sourceTree = "<group>";
+		};
+		6FD5A63E1BC072EA0067FC71 /* WatchLightApp */ = {
+			isa = PBXGroup;
+			children = (
+				6FD5A63F1BC072EA0067FC71 /* Interface.storyboard */,
+				6FD5A6421BC072EA0067FC71 /* Assets.xcassets */,
+				6FD5A6441BC072EB0067FC71 /* Info.plist */,
+			);
+			path = WatchLightApp;
+			sourceTree = "<group>";
+		};
+		6FD5A64D1BC072EB0067FC71 /* WatchLightApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6FD5A64E1BC072EB0067FC71 /* InterfaceController.swift */,
+				6FD5A6501BC072EB0067FC71 /* ExtensionDelegate.swift */,
+				6FD5A6521BC072EB0067FC71 /* GlanceController.swift */,
+				6FD5A6541BC072EB0067FC71 /* Assets.xcassets */,
+				6FD5A6561BC072EB0067FC71 /* Info.plist */,
+				6F6603101BC2DA4E002FFE44 /* BrightnessController.swift */,
+				6F6603121BC2F569002FFE44 /* KeepOnController.swift */,
+			);
+			path = "WatchLightApp Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +176,51 @@
 				6FD5A6221BC072C30067FC71 /* Sources */,
 				6FD5A6231BC072C30067FC71 /* Frameworks */,
 				6FD5A6241BC072C30067FC71 /* Resources */,
+				6FD5A6611BC072EB0067FC71 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6FD5A6581BC072EB0067FC71 /* PBXTargetDependency */,
 			);
 			name = WatchLight;
 			productName = WatchLight;
 			productReference = 6FD5A6261BC072C30067FC71 /* WatchLight.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6FD5A63C1BC072EA0067FC71 /* WatchLightApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD5A65E1BC072EB0067FC71 /* Build configuration list for PBXNativeTarget "WatchLightApp" */;
+			buildPhases = (
+				6FD5A63B1BC072EA0067FC71 /* Resources */,
+				6FD5A65D1BC072EB0067FC71 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FD5A64C1BC072EB0067FC71 /* PBXTargetDependency */,
+			);
+			name = WatchLightApp;
+			productName = WatchLightApp;
+			productReference = 6FD5A63D1BC072EA0067FC71 /* WatchLightApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6FD5A6481BC072EB0067FC71 /* WatchLightApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FD5A65A1BC072EB0067FC71 /* Build configuration list for PBXNativeTarget "WatchLightApp Extension" */;
+			buildPhases = (
+				6FD5A6451BC072EB0067FC71 /* Sources */,
+				6FD5A6461BC072EB0067FC71 /* Frameworks */,
+				6FD5A6471BC072EB0067FC71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchLightApp Extension";
+			productName = "WatchLightApp Extension";
+			productReference = 6FD5A6491BC072EB0067FC71 /* WatchLightApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +233,15 @@
 				TargetAttributes = {
 					6FD5A6251BC072C30067FC71 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QX3TDZDSV3;
+					};
+					6FD5A63C1BC072EA0067FC71 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QX3TDZDSV3;
+					};
+					6FD5A6481BC072EB0067FC71 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QX3TDZDSV3;
 					};
 				};
 			};
@@ -112,6 +259,8 @@
 			projectRoot = "";
 			targets = (
 				6FD5A6251BC072C30067FC71 /* WatchLight */,
+				6FD5A63C1BC072EA0067FC71 /* WatchLightApp */,
+				6FD5A6481BC072EB0067FC71 /* WatchLightApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +276,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FD5A63B1BC072EA0067FC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD5A6431BC072EA0067FC71 /* Assets.xcassets in Resources */,
+				6FD5A6411BC072EA0067FC71 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FD5A6471BC072EB0067FC71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD5A6551BC072EB0067FC71 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,11 +301,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FD5A62C1BC072C30067FC71 /* ViewController.swift in Sources */,
+				6F6D95B41BC4F576009BAA00 /* ModalViewController.swift in Sources */,
 				6FD5A62A1BC072C30067FC71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FD5A6451BC072EB0067FC71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FD5A6511BC072EB0067FC71 /* ExtensionDelegate.swift in Sources */,
+				6F6603131BC2F569002FFE44 /* KeepOnController.swift in Sources */,
+				6FD5A64F1BC072EB0067FC71 /* InterfaceController.swift in Sources */,
+				6F6603111BC2DA4E002FFE44 /* BrightnessController.swift in Sources */,
+				6FD5A6531BC072EB0067FC71 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FD5A64C1BC072EB0067FC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FD5A6481BC072EB0067FC71 /* WatchLightApp Extension */;
+			targetProxy = 6FD5A64B1BC072EB0067FC71 /* PBXContainerItemProxy */;
+		};
+		6FD5A6581BC072EB0067FC71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FD5A63C1BC072EA0067FC71 /* WatchLightApp */;
+			targetProxy = 6FD5A6571BC072EB0067FC71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6FD5A62D1BC072C30067FC71 /* Main.storyboard */ = {
@@ -156,6 +348,14 @@
 				6FD5A6331BC072C30067FC71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6FD5A63F1BC072EA0067FC71 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FD5A6401BC072EA0067FC71 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -246,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight;
@@ -257,10 +458,75 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WatchLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6FD5A65B1BC072EB0067FC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WatchLightApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6FD5A65C1BC072EB0067FC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "WatchLightApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6FD5A65F1BC072EB0067FC71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchLightApp_Extension;
+				INFOPLIST_FILE = WatchLightApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		6FD5A6601BC072EB0067FC71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchLightApp_Extension;
+				INFOPLIST_FILE = WatchLightApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MB.WatchLight.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -283,6 +549,25 @@
 				6FD5A63A1BC072C30067FC71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD5A65A1BC072EB0067FC71 /* Build configuration list for PBXNativeTarget "WatchLightApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD5A65B1BC072EB0067FC71 /* Debug */,
+				6FD5A65C1BC072EB0067FC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FD5A65E1BC072EB0067FC71 /* Build configuration list for PBXNativeTarget "WatchLightApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FD5A65F1BC072EB0067FC71 /* Debug */,
+				6FD5A6601BC072EB0067FC71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

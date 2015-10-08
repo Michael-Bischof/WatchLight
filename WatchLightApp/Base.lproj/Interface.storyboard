@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8089"/>
+    </dependencies>
+    <scenes>
+        <!--WatchLight-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="WatchLightController" title="WatchLight" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchLightApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" radius="1" spacing="0.0" id="pPl-Gs-lb3">
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="Opk-x5-Nbc">
+                        <items>
+                            <menuItem title="Brightness" image="bulb" id="1fa-MJ-SAe">
+                                <connections>
+                                    <action selector="menuItemBrightness" destination="AgC-eL-Hgc" id="1Zu-bT-Jk6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Keep On" image="stay" id="vwH-Os-CjL">
+                                <connections>
+                                    <action selector="menuItemKeepOn" destination="AgC-eL-Hgc" id="UmH-g7-afP"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--x-->
+        <scene sceneID="7Ys-g2-m0i">
+            <objects>
+                <controller identifier="BrightnessController" title="x" hidesWhenLoading="NO" id="dw4-xA-eVL" customClass="BrightnessController" customModule="WatchLightApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="qWb-Jh-0wp">
+                            <items>
+                                <label alignment="left" text="Brightness" id="8ej-gm-I7Z">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <group width="1" alignment="left" id="Aph-lo-ZSs">
+                                    <items>
+                                        <label alignment="left" numberOfLines="0" id="b84-s4-4Ah">
+                                            <string key="text">To enhance the brightness of your WatchLight, make sure to set the brightness of your Apple Watch to the highest possible value. Be aware that a brighter display results in shorter battery life.  The brightness can be set on your Apple Watch or using the companion app on your iPhone.</string>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="6"/>
+                                </group>
+                                <label alignment="left" text="Apple Watch:" id="9Rs-pj-0Ve">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Settings -&gt; Brightness &amp; Text Size" numberOfLines="0" id="qgr-8p-tE1">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label alignment="left" text="iPhone" id="vLb-ee-QDf">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" text="Apple Watch App -&gt; My Watch -&gt; Brightness &amp; Text Size" numberOfLines="0" id="V4K-dt-6iE">
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <group width="1" alignment="left" id="wUt-wf-j12">
+                                    <items>
+                                        <button width="1" alignment="left" title="OK" id="6yi-jL-sV1">
+                                            <connections>
+                                                <action selector="buttonBackPressed" destination="dw4-xA-eVL" id="lgh-nP-4lq"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="411" y="370.25"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="WatchLightApp" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" radius="6" spacing="0.0" id="gv7-I2-MZq">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="WatchLight" textAlignment="center" id="qox-6B-cba">
+                                    <color key="textColor" red="0.90070628159999999" green="0.90070628159999999" blue="0.90070628159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group alignment="left" radius="1" spacing="0.0" id="eew-Gs-W6Y">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="Tap for more light" textAlignment="center" id="wgH-ZM-Flk">
+                                    <color key="textColor" red="0.90070628156565646" green="0.90070628156565646" blue="0.90070628156565646" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+        <!--x-->
+        <scene sceneID="orm-oG-fLz">
+            <objects>
+                <controller identifier="KeepOnController" title="x" hidesWhenLoading="NO" id="GON-y1-vWV" customClass="KeepOnController" customModule="WatchLightApp_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="ulY-zC-9N4">
+                            <items>
+                                <label alignment="left" text="Keep on" id="JgL-T8-oGt">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <group width="1" alignment="left" id="JJL-Vn-haN">
+                                    <items>
+                                        <label alignment="left" numberOfLines="0" id="A2C-Cr-H5F">
+                                            <string key="text">To ensure that your WatchLight does not turn off, move the Digital Crown up and down while using WatchLight. This way you can stop the screen from turning off even while moving your wrist. If the screen turns off anyway, tap the screen once.</string>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="6"/>
+                                </group>
+                                <label alignment="left" text="Stay in WatchLight" numberOfLines="2" id="Mfr-Io-HoD">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label alignment="left" numberOfLines="0" id="neu-YD-Cs2">
+                                    <string key="text">If you want your Apple Watch to resume to WatchLight after the screens turned off, do the following on your Apple Watch or in the companion app on your iPhone:</string>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <group width="1" alignment="left" layout="vertical" id="Gnf-1Z-MqJ">
+                                    <items>
+                                        <label alignment="left" text="Apple Watch" id="Sxx-Iq-MK2">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="left" text="1. Settings -&gt; General -&gt; Activate on Wrist Raise" numberOfLines="0" id="Iiy-mq-bjk">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="8I7-AG-gHV">
+                                    <items>
+                                        <label alignment="left" text="2. Set the Resume to option to Last Used App" numberOfLines="0" id="IIx-am-kaF">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="lT2-Zm-2jd">
+                                    <items>
+                                        <label alignment="left" text="iPhone" id="kNd-NR-Oqz">
+                                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                        </label>
+                                        <label alignment="left" text="1. Apple Watch App -&gt; General -&gt; Activate on Wrist Raise" numberOfLines="0" id="aIA-a3-lUv">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" layout="vertical" id="X5T-nj-0NY">
+                                    <items>
+                                        <label alignment="left" text="2. Set On Wrist Raise to Resume Previous Activity" numberOfLines="0" id="qev-sz-cr3">
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="4" bottom="0.0"/>
+                                </group>
+                                <group width="1" alignment="left" id="oiH-hU-ShP">
+                                    <items>
+                                        <button width="1" alignment="left" title="OK" id="113-75-pFy">
+                                            <connections>
+                                                <action selector="buttonBackPressed" destination="GON-y1-vWV" id="rIX-uH-c2k"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="6"/>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="576" y="370"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+</document>
