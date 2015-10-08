@@ -1,5 +1,9 @@
 # WatchLight
-The flashlight on your AppleWatch
+Can't find the switch in a dark room? Can't find the keyhole after coming home late? Tripped over something in the dark again? 
+
+Suffer no more! 
+
+Introducing: WatchLight - The flashlight on your AppleWatch
 
 # Features
 - native Swift 2.0 WatchOS app (works without iPhone)
