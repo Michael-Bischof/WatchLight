@@ -14,29 +14,27 @@ class ModalViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var buttonTwitter: UIButton!
     @IBOutlet weak var buttonMail: UIButton!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        buttonTwitter.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
-        buttonMail.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        buttonTwitter.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        buttonMail.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         
         // Do any additional setup after loading the view.
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
-    @IBAction func buttonTwitterPressed(sender: AnyObject) {
-        let url:Optional<NSURL> = NSURL(string: "https://twitter.com/michael_bischof")
-        if UIApplication.sharedApplication().canOpenURL(url!) {
-            UIApplication.sharedApplication().openURL(url!)
+    @IBAction func buttonTwitterPressed(_ sender: AnyObject) {
+        let url:Optional<URL> = URL(string: "https://twitter.com/michael_bischof")
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.openURL(url!)
         }
     }
     
-    @IBAction func buttonMailPressed(sender: AnyObject) {
+    @IBAction func buttonMailPressed(_ sender: AnyObject) {
         if (MFMailComposeViewController.canSendMail()) {
             
             let emailTitle = "WatchLight Software Feedback"
@@ -52,7 +50,7 @@ class ModalViewController: UIViewController, MFMailComposeViewControllerDelegate
             
             mc.setToRecipients(toRecipents)
             
-            self.presentViewController(mc, animated: true, completion: nil)
+            self.present(mc, animated: true, completion: nil)
             
         }else {
             
@@ -62,30 +60,28 @@ class ModalViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
     
     
-    @IBAction func buttonExitPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true) { () -> Void in
-            
-        }
+    @IBAction func buttonExitPressed(_ sender: AnyObject) {
+        dismiss(animated: true) { () -> Void in }
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         switch result.rawValue {
             
-        case MFMailComposeResultCancelled.rawValue:
+        case MFMailComposeResult.cancelled.rawValue:
             print("Mail Cancelled")
-        case MFMailComposeResultSaved.rawValue:
+        case MFMailComposeResult.saved.rawValue:
             print("Mail Saved")
-        case MFMailComposeResultSent.rawValue:
+        case MFMailComposeResult.sent.rawValue:
             print("Mail Sent")
-        case MFMailComposeResultFailed.rawValue:
+        case MFMailComposeResult.failed.rawValue:
             print("Mail Failed")
         default:
             break
             
         }
         
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismiss(animated: false, completion: nil)
         
     }
     
@@ -93,16 +89,5 @@ class ModalViewController: UIViewController, MFMailComposeViewControllerDelegate
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

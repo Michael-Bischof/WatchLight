@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var timer:NSTimer?
     
     @IBOutlet weak var imageViewBackground: UIImageView!
     @IBOutlet weak var labelText: UILabel!
@@ -24,11 +22,11 @@ class ViewController: UIViewController {
         
     }
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
-    @IBAction func buttonTutPressed(sender: AnyObject) {
+    @IBAction func buttonTutPressed(_ sender: AnyObject) {
         
         if tutorialShowing {
             tutorialShowing = false
@@ -40,10 +38,8 @@ class ViewController: UIViewController {
     
     func resetLabelAndButton(){
         imageViewBackground.stopAnimating()
-        buttonTut.setTitle("How to keep WatchLight on", forState: UIControlState.Normal)
+        buttonTut.setTitle("How to keep WatchLight on", for: UIControlState())
         labelText.text = "Install WatchLight on your Apple Watch to get a flashlight right on your wrist."
-        timer?.invalidate()
-        timer = nil
     }
     
     func showTut() {
@@ -63,7 +59,7 @@ class ViewController: UIViewController {
         imageViewBackground.animationRepeatCount = 0
         imageViewBackground.startAnimating()
         
-        buttonTut.setTitle("Got it!", forState: UIControlState.Normal)
+        buttonTut.setTitle("Got it!", for: UIControlState())
         labelText.text = "To ensure that your WatchLight does not turn off, move the Digital Crown up and down while using WatchLight. If the screen turns off anyway, tap the screen once."
         
         tutorialShowing = true
