@@ -1,3 +1,6 @@
+# This app is no longer needed. Apple rejected this app and decided to put this kind of feature into watchOS directly. 
+## I'll keep this repo here in case somebody finds it interesting
+
 # WatchLight
 Can't find the switch in a dark room? Can't find the keyhole after coming home late? Tripped over something in the dark again? 
 
